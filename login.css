@@ -1,0 +1,137 @@
+/* Import futuristic font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #1498c0; /* Deep dark blue cyberpunk background */
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+    color: #0ff; /* Neon cyan text */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login container with neon glow */
+.login-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #00f7ff, 0 0 30px #00f7ff;
+    border: 2px solid #00f7ff;
+    width: 90%;
+    max-width: 400px;
+    text-transform: uppercase;
+}
+
+/* Title with a neon flicker effect */
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #00f7ff;
+    text-shadow: 0 0 5px #00f7ff, 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+    animation: neon-flicker 1.5s infinite alternate;
+}
+
+/* Neon flicker effect */
+@keyframes neon-flicker {
+    0% {
+        text-shadow: 0 0 5px #00f7ff, 0 0 10px #00f7ff;
+    }
+    100% {
+        text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+    }
+}
+
+/* Input fields */
+.input-group {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #0ff;
+    text-shadow: 0 0 5px #00f7ff;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #00f7ff;
+    background: transparent;
+    color: #0ff;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 8px #00f7ff;
+    transition: 0.3s ease-in-out;
+}
+
+/* Input fields focus effect */
+.input-group input:focus {
+    box-shadow: 0 0 15px #00f7ff;
+}
+
+/* Neon button */
+.neon-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 2px;
+    background: none;
+    color: #0ff;
+    border: 2px solid #00f7ff;
+    box-shadow: 0 0 10px #00f7ff, 0 0 40px #00f7ff inset;
+}
+
+/* Button hover effect */
+.neon-btn:hover {
+    background: rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 15px #00f7ff, 0 0 30px #00f7ff, 0 0 50px #00f7ff;
+    color: #000;
+}
+
+/* Glowing border animation */
+@keyframes border-glow {
+    0% {
+        border-color: #00f7ff;
+        box-shadow: 0 0 10px #00f7ff, 0 0 40px #00f7ff inset;
+    }
+    50% {
+        border-color: #ff00ff;
+        box-shadow: 0 0 10px #0e0e0e, 0 0 40px #161616 inset;
+    }
+    100% {
+        border-color: #00f7ff;
+        box-shadow: 0 0 10px #00f7ff, 0 0 40px #00f7ff inset;
+    }
+}
+
+/* Apply the border-glow animation */
+.neon-btn:hover {
+    animation: border-glow 1.5s infinite alternate;
+}
+
+/* Link styles */
+p a {
+    color: #0ff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+p a:hover {
+    text-shadow: 0 0 10px #00f7ff;
+}
